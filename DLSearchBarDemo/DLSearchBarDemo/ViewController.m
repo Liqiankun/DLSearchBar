@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dlSearchBar.textFieldHeight = 35;
+    self.dlSearchBar.textFieldHeight = 80;
 }
 
 - (void)didReceiveMemoryWarning {

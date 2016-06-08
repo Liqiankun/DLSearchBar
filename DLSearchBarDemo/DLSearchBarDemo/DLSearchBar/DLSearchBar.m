@@ -32,6 +32,10 @@
         searchField=[((UIView *)[self.subviews objectAtIndex:0]).subviews lastObject];
     }
     
+    if (self.textFieldHeight > self.bounds.size.height) {
+        self.textFieldHeight = self.bounds.size.height - 6;
+    }
+    
     searchField.frame = CGRectMake(8, (self.bounds.size.height - self.textFieldHeight) / 2 , self.bounds.size.width - 16, self.textFieldHeight);
     searchField.font = self.font;
     
